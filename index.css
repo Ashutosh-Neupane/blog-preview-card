@@ -1,0 +1,70 @@
+body,:root{
+    padding:0;
+    margin:0;
+    background-color: #F4D04E;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+h1{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom:0;
+}
+.card {
+    width: 384px;
+    height: auto; 
+    background-color: white;
+    border-radius: 0.8rem;
+    box-shadow: .5rem .5rem 0.1rem black; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: .1rem solid black;
+}
+.card:hover,.card:active{
+    cursor: pointer;
+}
+.card:hover>.explanation>h1,.card:active>.explanation>h1{
+    color:#F4D04E
+}
+.card:hover>.illustration-article,.card:active>.illustration-article{
+    transform:scale(1.1)
+}
+.illustration-article{
+    margin:1rem;
+    border-radius: .3rem;
+    margin-bottom: 0;
+    transition: transform 0.5s ease-in-out
+}
+.explanation{
+    padding:.9rem;
+    margin:1rem;
+    margin-top: 0;
+    display:flex;
+    flex-direction: column;
+    
+}
+.btn{
+    font:inherit;
+    background-color: #F4D04E;
+    border-radius: .3rem;
+    border:none;
+    width:5rem;
+    font-weight: bold;
+    margin:1rem 0;
+    padding:.5rem;
+    
+}
+.footer{
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile{
+    width:2rem;
+
+}
